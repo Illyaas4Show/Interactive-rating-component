@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* custom properties */
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --mediumGreyOp: rgba(124, 135, 152, 0.121);
+    --darkBlue: hsl(213, 19%, 18%);
+    --modDarkBlue: hsl(213, 19%, 11%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General ------------------------------------------------------------------------------------------------ */
+/* body -------------------------------------------------*/
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--veryDarkBlue);
+    color: var(--lightGrey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* container */
+.container {
+    background-image: radial-gradient(farthest-corner at 50% 0%, var(--darkBlue), var(--modDarkBlue));
+    /* background-color: var(--darkBlue); */
+    max-width: 25rem;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+
+
+/* rate section start ------------------------------------------------------------------------ */
+/* container ---------------------------------------------*/
+.rate {
+
+}
+
+/* Image -------------------------------------------------*/
+img {
+    background-color: var(--mediumGreyOp);
+    border-radius: 50%;
+    padding: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* title -------------------------------------------------*/
+h1 {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* info paragraph ----------------------------------------*/
+.info {
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+/* buttons -----------------------------------------------*/
+.btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.55rem;
+}
+
+button {
+    background-color: var(--mediumGreyOp);
+    color: var(--lightGrey);
+    border-radius: 50%;
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    height: auto;
+    transition: all 250ms ease;
+}
+
+button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn:focus {
+    background-color: var(--mediumGrey);
+    color: var(--white);
+}
+
+.submit {
+    display: block;
+    background-color: var(--orange);
+    width: 100%;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+
+/* rate section end ---------------------------------------------------------------------------*/
+
+/* thank you section start --------------------------------------------------------------------*/
+.ty {
+    display: none;
+}
+/* thank you section end ----------------------------------------------------------------------*/
