@@ -19,26 +19,28 @@
   <main>
     <!-- Rating state start -->
     <section class="rate container">
-      <img src="images/icon-star.svg" alt="">
+      <img src="images/icon-star.svg" class="star" alt="">
       <h1>How did we do?</h1>
       <p class="info">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <div class="btns">
-        <button class="btn 1">1</button>
-        <button class="btn 2">2</button>
-        <button class="btn 3">3</button>
-        <button class="btn 4">4</button>
-        <button class="btn 5">5</button>
+        <button class="btn 1" onclick="rate(1)">1</button>
+        <button class="btn 2" onclick="rate(2)">2</button>
+        <button class="btn 3" onclick="rate(3)">3</button>
+        <button class="btn 4" onclick="rate(4)">4</button>
+        <button class="btn 5" onclick="rate(5)">5</button>
       </div>
       <button class="submit" onclick="submit()">Submit</button>
     </section>
     <!-- Rating state end -->
+
+
     
     <!-- Thank you state start -->
     <section class="ty container">
-      <img class="img ty" alt="">
-      <div class="rating"><p>You selected <p></p> out of 5</p></div>
+      <img class="img-ty" src="images/illustration-thank-you.svg" alt="">
+      <div class="rating"><div><p>You selected <span class="number"></span> out of 5</p></div></div>
       <h2>Thank you!</h2>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      <p class="ty-info">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
     </section>
   </main>
   <!-- Thank you state end -->
