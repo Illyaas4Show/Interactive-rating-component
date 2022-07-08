@@ -10,7 +10,6 @@ var rating;
 
 // when the submit button is clicked, the rate card disappears and the thank you card appears
 let submit = () => {
-    console.log(rating);
 
     if (rating == undefined) {
         alert('Please rate :)');
